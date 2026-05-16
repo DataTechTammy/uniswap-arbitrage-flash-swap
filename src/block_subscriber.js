@@ -35,7 +35,6 @@ module.exports.subscribe = (providers, callback) => {
                 return;
             }
             console.error('errorSubscription', error);
-            process.exit();
         }).on("connected", subscriptionId => {
             console.log(`[${providerName}] You are connected on ${subscriptionId}`);
         }).on('data', async (block) => {
