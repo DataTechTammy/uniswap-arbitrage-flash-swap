@@ -9,6 +9,8 @@ const Prices = require('./src/prices');
 
 let FLASHSWAP_CONTRACT = process.env.CONTRACT;
 
+const BNB_MAINNET = '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c';
+
 const TransactionSender = require('./src/transaction_send');
 
 const fs = require('fs');
